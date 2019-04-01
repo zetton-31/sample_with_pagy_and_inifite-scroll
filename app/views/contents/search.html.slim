@@ -1,0 +1,6 @@
+#contents
+  .content
+    - @api_results.map do |result|
+      div
+        = "内容：#{result[:content]}  |  作成日時：#{result[:date]} "
+== pagy_nav @pagy
